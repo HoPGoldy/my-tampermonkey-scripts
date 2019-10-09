@@ -33,7 +33,7 @@
             }
         }
     }
-    setInterval(clearAd, 500)
+    setInterval(clearAd, 600)
 
     // 把右侧改变成固定列
     let aside = document.getElementsByClassName('_2OwGUo')[0]
