@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         简书新UI优化
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  优化简书的UI样式并去除广告
 // @author       HOPGOLDY
 // @match        https://www.jianshu.com/p/*
