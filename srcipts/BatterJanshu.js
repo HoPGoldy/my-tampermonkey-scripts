@@ -31,10 +31,9 @@
                 const ad = rightAD[i]
                 ad.parentElement.removeChild(ad)
             }
-            clearInterval(clearTimer)
         }
     }
-    let clearTimer = setInterval(clearAd, 300)
+    setInterval(clearAd, 600)
 
     // 移除右侧推荐阅读
     const clearRecommend = () => {
