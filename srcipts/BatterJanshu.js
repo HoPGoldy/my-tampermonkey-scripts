@@ -25,15 +25,26 @@
 
     // 删除右侧所有广告
     const clearAd = () => {
-        const rightAD = document.getElementsByClassName('_22bNOL')
+        const rightAD = document.getElementsByClassName('-umr26')
         if (rightAD.length > 0) {
             for (let i = 0; i < rightAD.length; i++) {
                 const ad = rightAD[i]
                 ad.parentElement.removeChild(ad)
             }
+            clearInterval(clearTimer)
         }
     }
-    setInterval(clearAd, 600)
+    let clearTimer = setInterval(clearAd, 300)
+
+    // 移除右侧推荐阅读
+    const clearRecommend = () => {
+        const recommend = document.getElementsByClassName('_3Z3nHf')
+        if (recommend.length > 1) {
+            recommend[1].parentElement.removeChild(recommend[1])
+            clearInterval(recommendTimer)
+        }
+    }
+    let recommendTimer = setInterval(clearRecommend, 300)
 
     // 把右侧改变成固定列
     let aside = document.getElementsByClassName('_2OwGUo')[0]
